@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <!-- item, quantity, price, total -->
+
+    <div>
+        <h1 class="text-center text-3xl p-2 font-serif bg-green-400">Invoice Application</h1>
+
+        <div class="flex justify-center m-10 gap-2 font-serif">
+
+            <!-- 1st input: add item -->
+            <label for="">Add Item</label><br>
+            <input id="addItem" class="border-2 h-8" type="text">
+
+            <br><br>
+
+            <!-- 2nd input: add item -->
+            <label for="">Quantity</label><br>
+            <input id="quantity" class="border-2 h-8" type="number">
+
+            <br><br>
+
+            <!-- 3rd input: add item -->
+            <label for="">Price</label><br>
+            <input id="price" class="border-2 h-8" type="number">
+
+            <button onclick="total()" type="submit" class="text-white duration-300 hover:bg-blue-500 hover:text-white h-8 w-40 ml-10 bg-blue-600">Total</button>
+
+        </div>
+    </div>
+
+    <div class="flex justify-center">
+        <table class="border-collapse">
+            <thead>
+                <tr class="border-2 bg-violet-700 text-white font-serif">
+                    <th class="border-2 w-96 py-1">Item Name</th>
+                    <th class="border-2 w-44 py-1">Item Quantity</th>
+                    <th class="border-2 w-44 py-1">Item Price</th>
+                    <th class="border-2 w-56 py-1">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td class="border-2 p-1.5">Apple</td>
+                    <td class="border-2 p-1.5">4</td>
+                    <td class="border-2 p-1.5">5.00</td>
+                    <td class="border-2 p-1.5">20.00 Taka</td>
+                </tr>
+                <tr id="items" class="text-center">
+                    <!-- <td id="itemName"></td>
+                    <td id="itemQuantity"></td>
+                    <td id="itemPrice"></td>
+                    <td id="totalPrice"></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+</body>
+</html>
