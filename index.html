@@ -32,7 +32,7 @@
             <label for="">Price</label><br>
             <input id="price" class="border-2 h-8" type="number">
 
-            <button onclick="total()" type="submit" class="text-white duration-300 hover:bg-blue-500 hover:text-white h-8 w-40 ml-10 bg-blue-600">Total</button>
+            <button onclick="add()" type="submit" class="text-white duration-300 hover:bg-blue-500 hover:text-white h-8 w-40 ml-10 bg-blue-600">ADD</button>
 
         </div>
     </div>
@@ -47,19 +47,8 @@
                     <th class="border-2 w-56 py-1">Total</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr class="text-center">
-                    <td class="border-2 p-1.5">Apple</td>
-                    <td class="border-2 p-1.5">4</td>
-                    <td class="border-2 p-1.5">5.00</td>
-                    <td class="border-2 p-1.5">20.00 Taka</td>
-                </tr>
-                <tr id="items" class="text-center">
-                    <!-- <td id="itemName"></td>
-                    <td id="itemQuantity"></td>
-                    <td id="itemPrice"></td>
-                    <td id="totalPrice"></td> -->
-                </tr>
+            <tbody id="items">
+                
             </tbody>
         </table>
     </div>
